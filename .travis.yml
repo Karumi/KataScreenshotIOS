@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: xcode8
+
+before_install:
+  - pod repo update --silent
+  - gem install xcpretty
+
+script:
+  - swiftlint
+  - set -o pipefail && xcodebuild -workspace MaxibonKataIOS.xcworkspace -scheme 'MaxibonKataIOS' -destination 'platform=iOS Simulator,name=iPhone 6s Plus' build test CODE_SIGN_IDENTITY=- | xcpretty -c
