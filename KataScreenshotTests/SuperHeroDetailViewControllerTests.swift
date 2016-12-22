@@ -2,85 +2,58 @@
 //  SuperHeroDetailViewControllerTests.swift
 //  KataSuperHeroes
 //
-//  Created by Pedro Vicente Gomez on 13/01/16.
+//  Created by Sergio Gutiérrez on 22/12/16.
 //  Copyright © 2016 GoKarumi. All rights reserved.
 //
 
 import Foundation
-import KIF
 import Nimble
 import UIKit
 @testable import KataScreenshot
 
-class SuperHeroDetailViewControllerTests: AcceptanceTestCase {
+class SuperHeroDetailViewControllerTests: ScreenshotTest {
 
     fileprivate let repository = MockSuperHeroesRepository()
 
-    func testShowsSuperHeroNameAsTitle() {
-        let superHero = givenASuperHeroWithName()
+    func testShowsSuperHeroWithNoBadge() {
+        let superHero = givenASuperHero()
+        
+        let viewController = getSuperHeroDetailViewController(superHero.name)
 
-        openSuperHeroDetailViewController(superHero.name)
-
-        tester().waitForView(withAccessibilityLabel: superHero.name)
+        verify(viewController: viewController)
     }
 
-    func testShowsSuperHeroName() {
-        let superHero = givenASuperHeroWithName()
+    func testShowsSuperHeroWithBadge() {
+        let superHero = givenASuperHero(isAvenger: true)
 
-        openSuperHeroDetailViewController(superHero.name)
+        let viewController = getSuperHeroDetailViewController(superHero.name)
 
-        tester().waitForView(withAccessibilityLabel: "Name: \(superHero.name)")
+        verify(viewController: viewController)
     }
 
-    func testShowsSuperHeroDescription() {
-        let superHero = givenASuperHeroWithName()
-
-        openSuperHeroDetailViewController(superHero.name)
-
-        tester().waitForView(withAccessibilityLabel: "Description: \(superHero.name)")
-    }
-
-    func testDoesNotShowAvengersBadgeIfTheHeroIsNotPartOfTheAvengersTeam() {
-        let superHero = givenASuperHeroWithName(false)
-
-        openSuperHeroDetailViewController(superHero.name)
-
-        tester().waitForAbsenceOfView(withAccessibilityLabel: "Avengers Badge")
-    }
-
-    func testShowsAvengersBadgeIfTheSuperHeroIsPartOfTheAvengersTeam() {
-        let superHero = givenASuperHeroWithName(true)
-
-        openSuperHeroDetailViewController(superHero.name)
-
-        tester().waitForView(withAccessibilityLabel: "Avengers Badge")
-    }
-
-    func testDoesNotShowLoadingViewOnceSuperHeroHasBeenLoaded() {
-        let superHero = givenASuperHeroWithName(true)
-
-        openSuperHeroDetailViewController(superHero.name)
-
-        tester().waitForAbsenceOfView(withAccessibilityLabel: "LoadingView")
-    }
-
-    fileprivate func givenASuperHeroWithName(_ isAvenger: Bool = false) -> SuperHero {
-        let superHero = SuperHero(name: "Mr. Clean",
+    fileprivate func givenASuperHero(isAvenger: Bool = false) -> SuperHero {
+        let superHero = SuperHero(
+            name: "Mr. Clean",
             photo: URL(string: "https://i.annihil.us/u/prod/marvel/i/mg/c/60/55b6a28ef24fa.jpg"),
-            isAvenger: isAvenger, description: "Description")
+            isAvenger: isAvenger,
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        )
         repository.superHeroes = [superHero]
         return superHero
     }
 
-    fileprivate func openSuperHeroDetailViewController(_ superHeroName: String) {
+    fileprivate func getSuperHeroDetailViewController(_ superHeroName: String) -> UIViewController {
         let superHeroDetailViewController = ServiceLocator()
             .provideSuperHeroDetailViewController(superHeroName) as! SuperHeroDetailViewController
-        superHeroDetailViewController.presenter = SuperHeroDetailPresenter(ui: superHeroDetailViewController,
+        superHeroDetailViewController.presenter = SuperHeroDetailPresenter(
+            ui: superHeroDetailViewController,
             superHeroName: superHeroName,
-            getSuperHeroByName: GetSuperHeroByName(repository: repository))
+            getSuperHeroByName: GetSuperHeroByName(repository: repository)
+        )
+
         let rootViewController = UINavigationController()
         rootViewController.viewControllers = [superHeroDetailViewController]
-        present(viewController: rootViewController)
-        tester().waitForAnimationsToFinish()
+
+        return rootViewController
     }
 }
