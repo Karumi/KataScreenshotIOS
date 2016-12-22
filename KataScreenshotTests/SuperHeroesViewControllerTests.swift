@@ -58,7 +58,7 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
         var superHeroes = [SuperHero]()
         for i in 0..<numberOfSuperHeroes {
             let superHero = SuperHero(name: "SuperHero - \(i)",
-                photo: NSURL(string: "https://i.annihil.us/u/prod/marvel/i/mg/c/60/55b6a28ef24fa.jpg") as URL?,
+                photo: URL(string: ""),
                 isAvenger: avengers, description: "Description - \(i)")
             superHeroes.append(superHero)
         }
