@@ -5,7 +5,6 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - Nimble (5.1.1)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -13,15 +12,13 @@ PODS:
 DEPENDENCIES:
   - BothamUI (~> 2.0)
   - FBSnapshotTestCase
-  - Nimble (~> 5.0)
   - SDWebImage
 
 SPEC CHECKSUMS:
   BothamUI: 5d1073124d4b14e32868a3eeb37509f1e8a73638
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: b53a72ae187d33a2aa228fb6985b97ef1edaa841
+PODFILE CHECKSUM: 69a2d50894c9a13a882c3c8c6274ba10e3344835
 
 COCOAPODS: 1.1.1

@@ -12,7 +12,7 @@ import FBSnapshotTestCase
 class ScreenshotTest: FBSnapshotTestCase {
     override func setUp() {
         super.setUp()
-        self.recordMode = false
+        self.recordMode = ProcessInfo.processInfo.environment["RECORD_MODE"] != nil
     }
 
     func verify(viewController: UIViewController) {

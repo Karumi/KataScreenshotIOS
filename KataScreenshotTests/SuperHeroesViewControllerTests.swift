@@ -6,8 +6,6 @@
 //  Copyright © 2016 GoKarumi. All rights reserved.
 //
 
-import Foundation
-import Nimble
 import UIKit
 @testable import KataScreenshot
 
