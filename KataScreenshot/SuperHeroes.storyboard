@@ -6,11 +6,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="ManifoldCF-Regular.otf">
-            <string>ManifoldCF-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Kata Super Heroes-->
         <scene sceneID="cW5-II-CMg">
@@ -27,46 +22,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="163" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8rJ-ss-dMc">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuperHeroTableViewCellIdentifier" rowHeight="163" id="oeV-Gk-mce" customClass="SuperHeroTableViewCell" customModule="KataScreenshot" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="163"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oeV-Gk-mce" id="qqq-ei-lKA">
-                                            <frame key="frameInset" width="375" height="163"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hAL-V2-PGp" userLabel="Photo Image View">
-                                                    <color key="backgroundColor" red="0.1333333333" green="0.15686274510000001" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Avengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1c-zD-xEt">
-                                                    <fontDescription key="fontDescription" name="ManifoldCF-Regular" family="Manifold CF" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avengers" translatesAutoresizingMaskIntoConstraints="NO" id="3Ig-Px-Hnl" userLabel="Avengers Badge Image VIew">
-                                                    <accessibility key="accessibilityConfiguration">
-                                                        <bool key="isElement" value="YES"/>
-                                                    </accessibility>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="hAL-V2-PGp" firstAttribute="centerY" secondItem="qqq-ei-lKA" secondAttribute="centerY" id="7iE-vl-1bn"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="3Ig-Px-Hnl" secondAttribute="bottom" constant="8" id="E2r-h8-cMR"/>
-                                                <constraint firstItem="hAL-V2-PGp" firstAttribute="centerX" secondItem="qqq-ei-lKA" secondAttribute="centerX" id="FmR-AH-r3A"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="3Ig-Px-Hnl" secondAttribute="trailing" constant="8" id="NtU-zx-mZy"/>
-                                                <constraint firstAttribute="leadingMargin" secondItem="B1c-zD-xEt" secondAttribute="leading" id="Sdp-MZ-2Jm"/>
-                                                <constraint firstItem="hAL-V2-PGp" firstAttribute="height" secondItem="qqq-ei-lKA" secondAttribute="height" id="azX-UP-yMi"/>
-                                                <constraint firstItem="hAL-V2-PGp" firstAttribute="width" secondItem="qqq-ei-lKA" secondAttribute="width" id="nZT-0h-k4j"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="B1c-zD-xEt" secondAttribute="bottom" constant="2" id="vfd-zo-vbe"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="avengersBadgeImageView" destination="3Ig-Px-Hnl" id="ZbO-Wi-suY"/>
-                                            <outlet property="nameLabel" destination="B1c-zD-xEt" id="xCC-BE-LvB"/>
-                                            <outlet property="photoImageView" destination="hAL-V2-PGp" id="eau-dB-EKm"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¯\_(ツ)_/¯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOF-w6-oKO">
                                 <accessibility key="accessibilityConfiguration" label="¯\_(ツ)_/¯"/>
