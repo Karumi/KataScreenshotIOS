@@ -59,7 +59,7 @@ Our recommendation for this exercise is:
 
 ## Considerations
 
-* If you get stuck, `master` branch contains already solved tests for `SuperHeroesViewControllerTests` and `SuperHeroViewControllerTests`
+* If you get stuck, `master` branch contains already solved tests for `SuperHeroesViewControllerTests` and `SuperHeroViewControllerTests`.
 
 ## Extra Tasks
 
