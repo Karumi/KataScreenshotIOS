@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ManifoldCF-Regular.otf">
+            <string>ManifoldCF-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuperHeroTableViewCellIdentifier" rowHeight="125" id="8CK-a4-klI" customClass="SuperHeroTableViewCell" customModule="KataScreenshot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8CK-a4-klI" id="C8b-Iu-N7A">
+                <frame key="frameInset" width="375" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C6L-Vx-VNB" userLabel="Photo Image View">
+                        <color key="backgroundColor" red="0.1333333333" green="0.15686274510000001" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Avengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvu-wV-pZB">
+                        <fontDescription key="fontDescription" name="ManifoldCF-Regular" family="Manifold CF" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avengers" translatesAutoresizingMaskIntoConstraints="NO" id="Mdz-hz-o8v" userLabel="Avengers Badge Image VIew">
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="C6L-Vx-VNB" firstAttribute="width" secondItem="C8b-Iu-N7A" secondAttribute="width" id="1oa-cv-7M0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cvu-wV-pZB" secondAttribute="bottom" constant="2" id="9Iz-V6-Klh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Mdz-hz-o8v" secondAttribute="trailing" constant="8" id="DMr-p7-unx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Mdz-hz-o8v" secondAttribute="bottom" constant="8" id="Mym-fT-9Xe"/>
+                    <constraint firstItem="C6L-Vx-VNB" firstAttribute="centerY" secondItem="C8b-Iu-N7A" secondAttribute="centerY" id="OTJ-7V-WdQ"/>
+                    <constraint firstItem="C6L-Vx-VNB" firstAttribute="centerX" secondItem="C8b-Iu-N7A" secondAttribute="centerX" id="a0t-5n-NDm"/>
+                    <constraint firstItem="C6L-Vx-VNB" firstAttribute="height" secondItem="C8b-Iu-N7A" secondAttribute="height" id="jhn-s1-7Cx"/>
+                    <constraint firstItem="cvu-wV-pZB" firstAttribute="leading" secondItem="C8b-Iu-N7A" secondAttribute="leadingMargin" id="vfZ-Bd-vaG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avengersBadgeImageView" destination="Mdz-hz-o8v" id="8mX-Td-Knb"/>
+                <outlet property="nameLabel" destination="cvu-wV-pZB" id="Dcb-YC-prg"/>
+                <outlet property="photoImageView" destination="C6L-Vx-VNB" id="afV-IE-k2a"/>
+            </connections>
+            <point key="canvasLocation" x="5.5" y="-33.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_avengers" width="64" height="72"/>
+    </resources>
+</document>

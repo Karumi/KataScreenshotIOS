@@ -27,9 +27,10 @@
 		4915B3E51E0C29190056AE6A /* SuperHeroDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915B3E31E0C29190056AE6A /* SuperHeroDetailViewControllerTests.swift */; };
 		4915B3E61E0C29190056AE6A /* SuperHeroesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915B3E41E0C29190056AE6A /* SuperHeroesViewControllerTests.swift */; };
 		4915B3E91E0C292D0056AE6A /* MockSuperHeroesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915B3E81E0C292D0056AE6A /* MockSuperHeroesRepository.swift */; };
-		4915B3ED1E0C29510056AE6A /* KIFTestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915B3EB1E0C29510056AE6A /* KIFTestActor.swift */; };
-		4915B3EE1E0C29510056AE6A /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915B3EC1E0C29510056AE6A /* XCTestCase.swift */; };
-		4915B3F01E0C295C0056AE6A /* AcceptanceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915B3EF1E0C295C0056AE6A /* AcceptanceTestCase.swift */; };
+		4915B3F21E0C2D130056AE6A /* ScreenshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915B3F11E0C2D130056AE6A /* ScreenshotTest.swift */; };
+		49CDFED91E2400830019961D /* SuperHeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CDFED81E2400830019961D /* SuperHeroTableViewCell.xib */; };
+		49CDFEDD1E2402840019961D /* SuperHeroTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDFEDC1E2402840019961D /* SuperHeroTableViewCellTests.swift */; };
+		49CDFEDF1E2403CB0019961D /* SuperHeroMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDFEDE1E2403CB0019961D /* SuperHeroMother.swift */; };
 		FC64759AD67A8E0D07F9DF6D /* Pods_KataScreenshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5509D4971E317467BCBF6C11 /* Pods_KataScreenshotTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,9 +70,10 @@
 		4915B3E31E0C29190056AE6A /* SuperHeroDetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		4915B3E41E0C29190056AE6A /* SuperHeroesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroesViewControllerTests.swift; sourceTree = "<group>"; };
 		4915B3E81E0C292D0056AE6A /* MockSuperHeroesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSuperHeroesRepository.swift; sourceTree = "<group>"; };
-		4915B3EB1E0C29510056AE6A /* KIFTestActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFTestActor.swift; sourceTree = "<group>"; };
-		4915B3EC1E0C29510056AE6A /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
-		4915B3EF1E0C295C0056AE6A /* AcceptanceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptanceTestCase.swift; sourceTree = "<group>"; };
+		4915B3F11E0C2D130056AE6A /* ScreenshotTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotTest.swift; sourceTree = "<group>"; };
+		49CDFED81E2400830019961D /* SuperHeroTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperHeroTableViewCell.xib; sourceTree = "<group>"; };
+		49CDFEDC1E2402840019961D /* SuperHeroTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroTableViewCellTests.swift; sourceTree = "<group>"; };
+		49CDFEDE1E2403CB0019961D /* SuperHeroMother.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroMother.swift; sourceTree = "<group>"; };
 		4A529D7E99EF55AFA1218129 /* Pods-KataScreenshotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataScreenshotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KataScreenshotTests/Pods-KataScreenshotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C52E23864CDE6FC17800AB6 /* Pods_KataScreenshot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataScreenshot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5509D4971E317467BCBF6C11 /* Pods_KataScreenshotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataScreenshotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,9 +141,8 @@
 			children = (
 				4915B3E21E0C29020056AE6A /* Super Heroes */,
 				4915B3E71E0C291F0056AE6A /* Test Doubles */,
-				4915B3EA1E0C29310056AE6A /* Extensions */,
-				4915B3EF1E0C295C0056AE6A /* AcceptanceTestCase.swift */,
 				4915B3B81E0C26340056AE6A /* Info.plist */,
+				4915B3F11E0C2D130056AE6A /* ScreenshotTest.swift */,
 			);
 			path = KataScreenshotTests;
 			sourceTree = "<group>";
@@ -206,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				4915B3D71E0C27560056AE6A /* SuperHeroTableViewCell.swift */,
+				49CDFED81E2400830019961D /* SuperHeroTableViewCell.xib */,
 			);
 			name = "Table View";
 			sourceTree = "<group>";
@@ -221,6 +223,7 @@
 		4915B3E21E0C29020056AE6A /* Super Heroes */ = {
 			isa = PBXGroup;
 			children = (
+				49CDFEDA1E2402720019961D /* View */,
 				4915B3E31E0C29190056AE6A /* SuperHeroDetailViewControllerTests.swift */,
 				4915B3E41E0C29190056AE6A /* SuperHeroesViewControllerTests.swift */,
 			);
@@ -231,17 +234,25 @@
 			isa = PBXGroup;
 			children = (
 				4915B3E81E0C292D0056AE6A /* MockSuperHeroesRepository.swift */,
+				49CDFEDE1E2403CB0019961D /* SuperHeroMother.swift */,
 			);
 			name = "Test Doubles";
 			sourceTree = "<group>";
 		};
-		4915B3EA1E0C29310056AE6A /* Extensions */ = {
+		49CDFEDA1E2402720019961D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4915B3EB1E0C29510056AE6A /* KIFTestActor.swift */,
-				4915B3EC1E0C29510056AE6A /* XCTestCase.swift */,
+				49CDFEDB1E2402770019961D /* Table View */,
 			);
-			name = Extensions;
+			name = View;
+			sourceTree = "<group>";
+		};
+		49CDFEDB1E2402770019961D /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				49CDFEDC1E2402840019961D /* SuperHeroTableViewCellTests.swift */,
+			);
+			name = "Table View";
 			sourceTree = "<group>";
 		};
 		9C99FE8E7FC6458A53FCC159 /* Frameworks */ = {
@@ -358,6 +369,7 @@
 				4915B39B1E0C25870056AE6A /* LaunchScreen.storyboard in Resources */,
 				4915B3981E0C25870056AE6A /* Assets.xcassets in Resources */,
 				4915B3DA1E0C27760056AE6A /* SuperHeroes.storyboard in Resources */,
+				49CDFED91E2400830019961D /* SuperHeroTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,12 +500,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CDFEDF1E2403CB0019961D /* SuperHeroMother.swift in Sources */,
 				4915B3E61E0C29190056AE6A /* SuperHeroesViewControllerTests.swift in Sources */,
+				49CDFEDD1E2402840019961D /* SuperHeroTableViewCellTests.swift in Sources */,
+				4915B3F21E0C2D130056AE6A /* ScreenshotTest.swift in Sources */,
 				4915B3E91E0C292D0056AE6A /* MockSuperHeroesRepository.swift in Sources */,
 				4915B3E51E0C29190056AE6A /* SuperHeroDetailViewControllerTests.swift in Sources */,
-				4915B3EE1E0C29510056AE6A /* XCTestCase.swift in Sources */,
-				4915B3F01E0C295C0056AE6A /* AcceptanceTestCase.swift in Sources */,
-				4915B3ED1E0C29510056AE6A /* KIFTestActor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

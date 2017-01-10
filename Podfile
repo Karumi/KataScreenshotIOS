@@ -7,6 +7,5 @@ target 'KataScreenshot' do
 end
 
 target 'KataScreenshotTests' do
-    pod 'Nimble', '~> 5.0'
-    pod 'KIF', '~> 3.0', :configurations => ['Debug']
+    pod 'FBSnapshotTestCase'
 end
