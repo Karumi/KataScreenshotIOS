@@ -16,7 +16,7 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
     func testShowsEmptyCase() {
         givenThereAreNoSuperHeroes()
 
-        let viewController = getSuperHeroDetailViewController()
+        let viewController = getSuperHeroViewController()
 
         verify(viewController: viewController)
     }
@@ -42,7 +42,7 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
         return superHeroes
     }
 
-    fileprivate func getSuperHeroDetailViewController() -> UIViewController {
+    fileprivate func getSuperHeroViewController() -> UIViewController {
         let superHeroesViewController = ServiceLocator()
             .provideSuperHeroesViewController() as! SuperHeroesViewController
         superHeroesViewController.presenter = SuperHeroesPresenter(
