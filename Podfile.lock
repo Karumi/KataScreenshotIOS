@@ -14,6 +14,12 @@ DEPENDENCIES:
   - FBSnapshotTestCase
   - SDWebImage
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BothamUI
+    - FBSnapshotTestCase
+    - SDWebImage
+
 SPEC CHECKSUMS:
   BothamUI: 5d1073124d4b14e32868a3eeb37509f1e8a73638
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
@@ -21,4 +27,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 69a2d50894c9a13a882c3c8c6274ba10e3344835
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.0
