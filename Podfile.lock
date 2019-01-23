@@ -1,5 +1,4 @@
 PODS:
-  - BothamUI (2.0.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -10,21 +9,18 @@ PODS:
   - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
-  - BothamUI (~> 2.0)
   - FBSnapshotTestCase
   - SDWebImage
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - BothamUI
+  https://github.com/cocoapods/specs.git:
     - FBSnapshotTestCase
     - SDWebImage
 
 SPEC CHECKSUMS:
-  BothamUI: 5d1073124d4b14e32868a3eeb37509f1e8a73638
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 69a2d50894c9a13a882c3c8c6274ba10e3344835
+PODFILE CHECKSUM: ee7bd3abce15931d343d72872eebbfaead2fbb88
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
