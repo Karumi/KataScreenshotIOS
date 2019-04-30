@@ -449,7 +449,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KataScreenshotTests/Pods-KataScreenshotTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KataScreenshotTests/Pods-KataScreenshotTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -458,7 +458,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KataScreenshotTests/Pods-KataScreenshotTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KataScreenshotTests/Pods-KataScreenshotTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E99A9AA65D49F6E7E3284E47 /* [CP] Embed Pods Frameworks */ = {
@@ -467,7 +467,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KataScreenshot/Pods-KataScreenshot-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KataScreenshot/Pods-KataScreenshot-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -476,7 +476,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KataScreenshot/Pods-KataScreenshot-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KataScreenshot/Pods-KataScreenshot-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
