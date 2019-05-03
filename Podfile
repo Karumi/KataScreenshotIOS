@@ -6,5 +6,5 @@ target 'KataScreenshot' do
 end
 
 target 'KataScreenshotTests' do
-    pod 'FBSnapshotTestCase'
+    pod 'iOSSnapshotTestCase'
 end
