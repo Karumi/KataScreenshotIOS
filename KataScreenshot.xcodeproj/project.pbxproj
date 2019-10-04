@@ -32,7 +32,6 @@
 		491DCEA421F8C0D2009C0D77 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491DCEA321F8C0D2009C0D77 /* LoadingView.xib */; };
 		491DCEA721F8C0DC009C0D77 /* SuperHeroesTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DCEA521F8C0DC009C0D77 /* SuperHeroesTableViewDelegate.swift */; };
 		491DCEA821F8C0DC009C0D77 /* SuperHeroesTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DCEA621F8C0DC009C0D77 /* SuperHeroesTableDataSource.swift */; };
-		496146012284227C00BCC9C4 /* SuperHeroTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496146002284227C00BCC9C4 /* SuperHeroTableViewCellTests.swift */; };
 		49CDFED91E2400830019961D /* SuperHeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CDFED81E2400830019961D /* SuperHeroTableViewCell.xib */; };
 		49CDFEDD1E2402840019961D /* SuperHeroTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDFEDC1E2402840019961D /* SuperHeroTableViewCellTests.swift */; };
 		49CDFEDF1E2403CB0019961D /* SuperHeroMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDFEDE1E2403CB0019961D /* SuperHeroMother.swift */; };
@@ -80,7 +79,6 @@
 		491DCEA321F8C0D2009C0D77 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		491DCEA521F8C0DC009C0D77 /* SuperHeroesTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroesTableViewDelegate.swift; sourceTree = "<group>"; };
 		491DCEA621F8C0DC009C0D77 /* SuperHeroesTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroesTableDataSource.swift; sourceTree = "<group>"; };
-		496146002284227C00BCC9C4 /* SuperHeroTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroTableViewCellTests.swift; sourceTree = "<group>"; };
 		49CDFED81E2400830019961D /* SuperHeroTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuperHeroTableViewCell.xib; sourceTree = "<group>"; };
 		49CDFEDC1E2402840019961D /* SuperHeroTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroTableViewCellTests.swift; sourceTree = "<group>"; };
 		49CDFEDE1E2403CB0019961D /* SuperHeroMother.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHeroMother.swift; sourceTree = "<group>"; };
