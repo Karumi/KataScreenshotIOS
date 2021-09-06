@@ -1,11 +1,3 @@
-//
-//  ScreenshotTest.swift
-//  KataScreenshot
-//
-//  Created by Sergio Gutiérrez on 22/12/16.
-//  Copyright © 2016 Karumi. All rights reserved.
-//
-
 import Foundation
 import FBSnapshotTestCase
 

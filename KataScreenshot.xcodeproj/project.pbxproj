@@ -236,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				49CDFEDA1E2402720019961D /* View */,
-				496146002284227C00BCC9C4 /* SuperHeroTableViewCellTests.swift */,
 				4915B3E41E0C29190056AE6A /* SuperHeroesViewControllerTests.swift */,
 			);
 			name = "Super Heroes";
@@ -513,7 +512,6 @@
 				49CDFEDD1E2402840019961D /* SuperHeroTableViewCellTests.swift in Sources */,
 				4915B3F21E0C2D130056AE6A /* ScreenshotTest.swift in Sources */,
 				4915B3E91E0C292D0056AE6A /* MockSuperHeroesRepository.swift in Sources */,
-				496146012284227C00BCC9C4 /* SuperHeroTableViewCellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -643,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -663,6 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.KataScreenshot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -677,6 +676,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.KataScreenshot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
