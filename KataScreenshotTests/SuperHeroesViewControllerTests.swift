@@ -1,16 +1,8 @@
-//
-//  SuperHeroesViewControllerTests.swift
-//  KataSuperHeroes
-//
-//  Created by Sergio Gutiérrez on 22/12/16.
-//  Copyright © 2016 GoKarumi. All rights reserved.
-//
-
 import UIKit
+
 @testable import KataScreenshot
 
 class SuperHeroesViewControllerTests: ScreenshotTest {
-
     fileprivate let repository = MockSuperHeroesRepository()
 
     func testShowsEmptyCase() {
@@ -22,7 +14,7 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
     }
 
     func testShowsOneSuperHeroes() {
-        let _ = givenThereAreSomeSuperHeroes(1)
+        _ = givenThereAreSomeSuperHeroes(1)
 
         let viewController = getSuperHeroDetailViewController()
 
@@ -30,7 +22,7 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
     }
 
     func testShowsSuperHeroesWithoutBadges() {
-        let _ = givenThereAreSomeSuperHeroes()
+        _ = givenThereAreSomeSuperHeroes()
 
         let viewController = getSuperHeroDetailViewController()
 
@@ -38,35 +30,38 @@ class SuperHeroesViewControllerTests: ScreenshotTest {
     }
 
     func testShowsSuperHeroesWithBadges() {
-        let _ = givenThereAreSomeAvengers()
+        _ = givenThereAreSomeAvengers()
 
         let viewController = getSuperHeroDetailViewController()
 
         verify(viewController: viewController)
     }
+}
 
-    fileprivate func givenThereAreSomeAvengers() -> [SuperHero] {
+private extension SuperHeroesViewControllerTests {
+    func givenThereAreSomeAvengers() -> [SuperHero] {
         return givenThereAreSomeSuperHeroes(avengers: true)
     }
 
-    fileprivate func givenThereAreNoSuperHeroes() {
+    func givenThereAreNoSuperHeroes() {
         _ = givenThereAreSomeSuperHeroes(0)
     }
 
-    fileprivate func givenThereAreSomeSuperHeroes(_ numberOfSuperHeroes: Int = 10,
-        avengers: Bool = false) -> [SuperHero] {
+    func givenThereAreSomeSuperHeroes(_ numberOfSuperHeroes: Int = 10,
+                                      avengers: Bool = false) -> [SuperHero]
+    {
         var superHeroes = [SuperHero]()
-        for i in 0..<numberOfSuperHeroes {
+        for i in 0 ..< numberOfSuperHeroes {
             let superHero = SuperHero(name: "SuperHero - \(i)",
-                photo: URL(string: ""),
-                isAvenger: avengers, description: "Description - \(i)")
+                                      photo: URL(string: ""),
+                                      isAvenger: avengers, description: "Description - \(i)")
             superHeroes.append(superHero)
         }
         repository.superHeroes = superHeroes
         return superHeroes
     }
 
-    fileprivate func getSuperHeroDetailViewController() -> UIViewController {
+    func getSuperHeroDetailViewController() -> UIViewController {
         let superHeroesViewController = ServiceLocator()
             .provideSuperHeroesViewController() as! SuperHeroesViewController
         superHeroesViewController.presenter = SuperHeroesPresenter(
