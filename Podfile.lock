@@ -1,26 +1,26 @@
 PODS:
-  - iOSSnapshotTestCase (7.0.0):
-    - iOSSnapshotTestCase/SwiftSupport (= 7.0.0)
-  - iOSSnapshotTestCase/Core (7.0.0)
-  - iOSSnapshotTestCase/SwiftSupport (7.0.0):
-    - iOSSnapshotTestCase/Core
+  - Nimble (9.2.1)
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
+  - SnapshotTesting (1.9.0)
 
 DEPENDENCIES:
-  - iOSSnapshotTestCase
+  - Nimble
   - SDWebImage
+  - SnapshotTesting
 
 SPEC REPOS:
   trunk:
-    - iOSSnapshotTestCase
+    - Nimble
     - SDWebImage
+    - SnapshotTesting
 
 SPEC CHECKSUMS:
-  iOSSnapshotTestCase: 63402a5707db9c4103b6cc3f04c76e981fff7952
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
 
-PODFILE CHECKSUM: aae820aced7e249cf24c00547650ab4a8e4850d4
+PODFILE CHECKSUM: 65467674016d6ad49f5a21cc5d3ea9a1250aa529
 
 COCOAPODS: 1.10.2

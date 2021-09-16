@@ -1,17 +1,31 @@
 import Foundation
-import FBSnapshotTestCase
+import SnapshotTesting
+import XCTest
 
-class ScreenshotTest: FBSnapshotTestCase {
+class ScreenshotTest: XCTestCase {
     override func setUp() {
         super.setUp()
-        self.recordMode = ProcessInfo.processInfo.environment["RECORD_MODE"] != nil
+        // self.recordMode = ProcessInfo.processInfo.environment["RECORD_MODE"] != nil
     }
 
-    func verify(viewController: UIViewController) {
-        verify(view: viewController.view)
+    func verify(
+        viewController: UIViewController,
+        _ fileName: StaticString = #file,
+        _ name: String = #function
+    ) {
+        verify(view: viewController.view, fileName, name)
     }
 
-    func verify(view: UIView) {
-        FBSnapshotVerifyView(view)
+    func verify(
+        view: UIView,
+        _ fileName: StaticString = #file,
+        _ name: String = #function
+    ) {
+        assertSnapshot(
+            matching: view,
+            as: .image,
+            file: fileName,
+            testName: name
+        )
     }
 }

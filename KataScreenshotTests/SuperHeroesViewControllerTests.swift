@@ -1,5 +1,6 @@
 @testable import KataScreenshot
 import UIKit
+import Nimble
 
 class SuperHeroesViewControllerTests: ScreenshotTest {
     private let repository = MockSuperHeroesRepository()
@@ -46,6 +47,13 @@ private extension SuperHeroesViewControllerTests {
 
         let rootViewController = UINavigationController()
         rootViewController.viewControllers = [superHeroesViewController]
+        
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        appDelegate?.window?.rootViewController = rootViewController
+        
+        waitUntil { done in
+            DispatchQueue.main.async { done() }
+        }
 
         return rootViewController
     }
