@@ -3,9 +3,11 @@ import SnapshotTesting
 import XCTest
 
 class ScreenshotTest: XCTestCase {
+    private var shouldRecord: Bool = false
+    
     override func setUp() {
         super.setUp()
-        // self.recordMode = ProcessInfo.processInfo.environment["RECORD_MODE"] != nil
+        self.shouldRecord = ProcessInfo.processInfo.environment["RECORD_MODE"] != nil
     }
 
     func verify(
@@ -24,6 +26,7 @@ class ScreenshotTest: XCTestCase {
         assertSnapshot(
             matching: view,
             as: .image,
+            record: shouldRecord,
             file: fileName,
             testName: name
         )
